@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/linearLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/robotoblack"
+            android:text="Registrar Viaje"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_toEndOf="@id/textTitulo"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textDatosViaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos de Viaje"
+        android:textSize="18sp"
+        android:fontFamily="@font/robotobold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLogo"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textCompleteCampos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete los siguientes campos requeridos"
+        android:fontFamily="@font/roboto"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/textDatosViaje"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/linearApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textCompleteCampos"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/textApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicativo:"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textApp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="1dp"
+        android:layout_alignBaseline="@id/textApp"
+        android:entries="@array/applications"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearApp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placa de Vehículo:"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/textPlaca"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="1dp"
+            android:layout_alignBaseline="@id/textPlaca"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearConductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearPlaca"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textNombreConductor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Conductor:"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editNombreConductor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:layout_below="@id/textNombreConductor"
+            android:layout_toEndOf="@id/textNombreConductor"
+            android:layout_alignBaseline="@id/textNombreConductor"
+            android:layout_marginStart="8dp"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearConductor"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textOrigen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Origen:"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_below="@id/textOrigen"
+            android:layout_marginStart="8dp"
+            android:layout_alignBaseline="@id/textOrigen"
+            android:layout_toEndOf="@id/textOrigen"
+            android:textColor="@color/white"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearOrigen"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textDestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destino:"
+            android:fontFamily="@font/roboto"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_below="@id/textDestino"
+            android:layout_alignBaseline="@id/textDestino"
+            android:layout_toEndOf="@id/textDestino"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnIniciarViaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Viaje"
+        android:fontFamily="@font/robotoblack"
+        android:layout_below="@id/linearDestino"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:elevation="8dp" />
+
+</RelativeLayout>

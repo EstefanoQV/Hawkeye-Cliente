@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cliente</string>
+    <string-array name="applications">
+        <item>Indrive</item>
+        <item>Yango</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
