@@ -1,5 +1,6 @@
 # Hawkeye-Cliente :eye:
 Versión para el cliente de la aplicación Hawkeye.
+
 **Hawkeye** es una aplicación móvil diseñada para conectar a los ciudadanos con las autoridades policiales de manera eficiente. Permite a los usuarios ver la ubicación de los policías más cercanos y enviar información sobre su estado actual durante un viaje en taxi, facilitando una respuesta rápida en situaciones de emergencia.
 
 ## Estado del Proyecto :construction:
